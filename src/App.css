@@ -2,10 +2,13 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  .App-logo {
+    pointer-events: none;
+
+
+    height: 40vmin;
+    
+  }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -14,8 +17,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  background-color: #282c34;
   display: flex;
   flex-direction: column;
   align-items: center;
