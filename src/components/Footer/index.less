@@ -3,7 +3,6 @@
   height: 992px;
   margin-top: 188px;
   color: #ffffff;
-  background: yellow;
 }
 .footer-main {
   display: flex;
@@ -18,11 +17,11 @@
     margin-left: 64px;
     padding-top: 119px;
     padding-bottom: 32px;
-    font-size: 48px;
+    color: #eff0f0;
   }
   span {
     padding-left: 64px;
-    font-size: 16px;
+    color: #eff0f0;
   }
 }
 .footer-form {
@@ -42,31 +41,17 @@
       color: #eff0f0;
       font-size: 20px;
       background-color: #606568;
-
-      border: none;
-      outline: none;
-      box-shadow: none;
-      -webkit-appearance: none;
-      resize: none;
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
   }
   .big {
     margin-left: 32px;
-    input {
+    .detailed {
       width: 395px;
       height: 332px;
       padding: 0;
       color: #ffffff;
       font-size: 20px;
       background-color: #606568;
-
-      border: none;
-      outline: none;
-      box-shadow: none;
-      -webkit-appearance: none;
-      resize: none;
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
     button {
       width: 395px;
@@ -92,9 +77,12 @@
     gap: 32px;
     font-size: 24px;
     text-decoration: underline;
-    .sub-color {
+    & > div:hover {
       color: #888b8d;
-      text-decoration: none;
+      text-decoration: underline #888b8d;
+    }
+    .menu {
+      width: 288px;
     }
   }
   .menu-sub {
@@ -102,5 +90,17 @@
   }
 }
 .footer-message {
+  display: flex;
+  justify-content: space-between;
+  width: 1204px;
+  margin: 0 auto;
+  margin-top: 32px;
   color: #53575a;
+
+  .menu {
+    display: flex;
+    & > li {
+      margin-left: 32px;
+    }
+  }
 }

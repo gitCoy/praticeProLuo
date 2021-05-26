@@ -16,21 +16,21 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-main">
         <div className="footer-info">
-          <div className="text">Get in touch.</div>
-          <span>
+          <div className="text heading3">Get in touch.</div>
+          <span className="body3">
             Tell us how we can assist you and one of our
             <br />
           </span>
-          <span>experienced mobile strategists will get in touch shortly.</span>
+          <span className="body3">experienced mobile strategists will get in touch shortly.</span>
           <div className="footer-form">
-            <div className="mini-form">
-              <input placeholder="Name" />
-              <input placeholder="Company" />
-              <input placeholder="Phone" />
-              <input placeholder="Email" />
+            <div className="mini-form body2">
+              <input placeholder="Name" required />
+              <input placeholder="Company" required />
+              <input placeholder="Phone" required />
+              <input placeholder="Email" required />
             </div>
             <div className="big">
-              <input placeholder="Name" />
+              <textarea className="detailed" placeholder="Name" />
               <button>Send message</button>
             </div>
           </div>
@@ -38,19 +38,14 @@ const Footer = () => {
         <div className="footer-right ">
           <div className="position">
             <div className="footer-logo">
-              <img src="/logo(2).png" alt="logo" />
+              <img src="/img/logo(2).png" alt="logo" />
             </div>
-            <div className="footer-menu">
+            <div className="footer-menu link1">
               {menu.map((item, index) => {
                 return (
-                  <a
-                    className={`menu ${index > 3 ? 'menu-sub' : ''} ${
-                      index == 3 ? 'sub-color' : ''
-                    } `}
-                    key={index}
-                  >
+                  <div className={`menu ${index > 3 ? 'menu-sub' : ''}`} key={index}>
                     {item}
-                  </a>
+                  </div>
                 );
               })}
             </div>
@@ -58,10 +53,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-message">
-        <span>© 2020 Monstar Lab</span>
-        <span>Information Security Policy</span>
-        <span>Privacy Policy</span>
-        <span>Terms of Service</span>
+        <span className="title3">© 2020 Monstar Lab</span>
+        <ul className="menu  link3">
+          <li>Information Security Policy</li>
+          <li>Privacy Policy</li>
+          <li>Terms of Service</li>
+        </ul>
       </div>
     </div>
   );

@@ -1,12 +1,19 @@
 import routes from './router';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import './App.less';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/" render={() => {<Redirect to="/home" />}} />
+          <Route
+            exact
+            path="/"
+            render={() => {
+              <Redirect to="/home" />;
+            }}
+          />
           {routes.map((item) => {
             return (
               <Route
