@@ -24,10 +24,24 @@ const Footer = () => {
           <span className="body3">experienced mobile strategists will get in touch shortly.</span>
           <div className="footer-form">
             <div className="mini-form body2">
-              <input placeholder="Name" required />
-              <input placeholder="Company" required />
-              <input placeholder="Phone" required />
-              <input placeholder="Email" required />
+              <input className="input-field" placeholder="Name" required />
+              <input className="input-field" placeholder="Company" required />
+              <input className="input-field" placeholder="Phone" type="email" required />
+              <input className="input-field" placeholder="Email" type="tel" required />
+              <label className="form-costom">
+                <input
+                  className="custom-checkbox"
+                  type="checkbox"
+                  name="agreement"
+                  id="agreement"
+                />
+                <span>
+                  I agree to Monstar Labs’{' '}
+                  <a className="link3" href="/policy-cn/" target="_blank">
+                    Data Policy
+                  </a>{' '}
+                </span>
+              </label>
             </div>
             <div className="big">
               <textarea className="detailed" placeholder="Name" />
@@ -43,7 +57,12 @@ const Footer = () => {
             <div className="footer-menu link1">
               {menu.map((item, index) => {
                 return (
-                  <div className={`menu ${index > 3 ? 'menu-sub' : ''}`} key={index}>
+                  <div
+                    className={`menu-hover ${index > 3 ? 'menu-sub' : ''} ${
+                      index < 2 ? 'menu' : ''
+                    } `}
+                    key={index}
+                  >
                     {item}
                   </div>
                 );

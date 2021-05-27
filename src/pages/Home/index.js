@@ -255,9 +255,11 @@ const Home = () => {
             market. In our experience there are three keys to success:{' '}
           </div>
           <div className="paragraph3 heading4">
-            1) China business mindset <br />
-            2) Efficient digitalization <br />
-            3) Trusted local partners.”
+            <ul>
+              <li> 1) China business mindset </li>
+              <li> 2) Efficient digitalization </li>
+              <li> 3) Trusted local partners.”</li>
+            </ul>
           </div>
           <div className="introduction body3">Anthea Zhang, CEO, Monstar Lab China</div>
         </div>

@@ -5,6 +5,7 @@
 }
 
 body {
+  width: 100%;
   word-break: break-word;
 }
 
@@ -35,6 +36,9 @@ textarea {
   -webkit-appearance: none;
   resize: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input:valid {
+  background-color: yellow;
 }
 ul {
   li {
@@ -141,6 +145,7 @@ ul {
   font-size: 24px;
   font-family: MonumentGrotesk-Medium, MonumentGrotesk;
   text-decoration: underline;
+  cursor: pointer;
 }
 .link2 {
 }
@@ -151,7 +156,12 @@ ul {
   font-family: MonumentGrotesk-Medium, MonumentGrotesk;
   line-height: 24px;
   text-decoration: underline;
+  cursor: pointer;
 }
 button {
   cursor: pointer;
+}
+.grid {
+  width: 100%;
+  padding: 0 32px;
 }

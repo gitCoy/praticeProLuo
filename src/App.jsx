@@ -11,7 +11,7 @@ function App() {
             exact
             path="/"
             render={() => {
-              <Redirect to="/home" />;
+              return <Redirect to="/home" />;
             }}
           />
           {routes.map((item) => {
