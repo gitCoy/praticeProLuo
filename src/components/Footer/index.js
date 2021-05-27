@@ -13,7 +13,7 @@ const Footer = () => {
     'Engineering blog',
   ];
   return (
-    <div className="footer">
+    <div className="footer grid">
       <div className="footer-main">
         <div className="footer-info">
           <div className="text heading3">Get in touch.</div>

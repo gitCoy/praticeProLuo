@@ -1,16 +1,19 @@
 .main {
-  width: 1376px;
+  min-width: 1367px;
   height: 874px;
-  margin: 128px auto;
+  margin: 66px auto;
   background-color: yellow;
 }
 .tech {
   display: flex;
   flex-wrap: wrap;
+  min-width: 1270px;
+
   .tech-left-text {
     flex: 1;
     height: 500px;
     margin-left: 79px;
+
     .heading3 {
       margin-top: 66px;
     }
@@ -30,6 +33,7 @@
   }
   .tech-left-img {
     flex: 1;
+
     img {
       margin-left: 76px;
     }
@@ -38,6 +42,7 @@
     width: 687px;
     padding-left: 110px;
     background-color: #ffffff;
+
     .title2 {
       margin-top: 66px;
     }
@@ -47,9 +52,13 @@
     }
   }
 }
+.grid-special {
+  width: 100%;
+  padding: 0 108px;
+}
 .challenges {
-  width: 1224px;
   margin: 0 auto;
+
   .challenges-title {
     width: 582px;
   }
@@ -91,8 +100,10 @@
   margin-top: 94px;
   color: #53575a;
   background-color: #ffff00;
+
   .solution-left {
     width: 579px;
+
     .solution-text {
       margin-top: 66px;
       margin-left: 76px;
@@ -106,6 +117,7 @@
   }
   .solution-right {
     flex: 1;
+
     .solution-right-bottom {
       margin-top: 66px;
     }
@@ -114,6 +126,7 @@
       height: 66px;
       margin-top: 32px;
       background: #eff0f0;
+
       .title2 {
         padding-left: 108px;
         line-height: 66px;
@@ -127,6 +140,7 @@
   height: 810px;
   margin: 0 auto;
   margin-top: 128px;
+
   img {
     position: absolute;
     bottom: 0;
@@ -153,11 +167,12 @@
 }
 .service {
   position: relative;
-  width: 1376px;
+  min-width: 1376px;
   height: 600px;
   margin: 0 auto;
   margin-top: 162px;
   background-color: #ffff00;
+
   .service-text {
     margin-left: 76px;
     padding-top: 66px;
@@ -166,6 +181,7 @@
     position: absolute;
     top: -32px;
     right: 75px;
+    width: 46%;
   }
   .heading3 {
     width: 470px;
@@ -179,9 +195,15 @@
     position: absolute;
     bottom: -32px;
     display: flex;
-    gap: 56px;
-    width: 1224px;
-    margin-left: 76px;
+    justify-content: center;
+    width: 100%;
+
+    .service-mid {
+      display: flex;
+      gap: 56px;
+      width: 1224px;
+      margin: 0 auto;
+    }
     .title2 {
       display: table-cell;
       width: 200px;
@@ -194,14 +216,16 @@
 }
 .service2 {
   position: relative;
-  width: 1376px;
+  min-width: 1376px;
   height: 810px;
   margin: 0 auto;
   margin-top: 126px;
   background-color: #ffff00;
+
   .service2-text {
     margin-left: 76px;
     padding-top: 66px;
+
     .heading3 {
       width: 316px;
       padding-top: 24px;
@@ -214,10 +238,11 @@
   .service2-right {
     position: absolute;
     top: 0;
-    right: 76px;
     width: 716px;
     height: 929px;
+    margin-left: 584px;
     background-color: #ffffff;
+
     .service2-main {
       width: 652px;
       margin: 0 auto;
@@ -229,6 +254,7 @@
         height: 388px;
         margin-top: 24px;
         background: #eff0f0;
+
         .aws-text {
           margin-left: 32px;
           & > li {
@@ -240,6 +266,7 @@
         height: 244px;
         margin-top: 24px;
         background: #eff0f0;
+
         .aliCloud-text {
           padding: 32px;
         }
@@ -248,14 +275,16 @@
   }
 }
 .case {
-  width: 1376px;
+  min-width: 1376px;
   height: 600px;
   margin: 0 auto;
   margin-top: 213px;
   background-color: #ffff00;
+
   .case-text {
     width: 100%;
     height: 324px;
+
     .heading3 {
       width: 742px;
       margin-left: 76px;
@@ -265,6 +294,7 @@
       display: flex;
       justify-content: space-between;
       margin-top: 24px;
+
       .body3 {
         width: 715px;
         margin-left: 76px;
@@ -279,6 +309,7 @@
     display: flex;
     gap: 32px;
     justify-content: center;
+
     & > div {
       width: 392px;
       img {
@@ -290,6 +321,7 @@
       height: 172px;
       padding: 0;
       background-color: #eff0f0;
+
       .width {
         width: 360px;
         padding-top: 32px;
@@ -300,11 +332,12 @@
 }
 .boss {
   position: relative;
-  width: 1376px;
+  min-width: 1160px;
   height: 600px;
   margin: 0 auto;
   margin-top: 554px;
   background-color: #eff0f0;
+
   img {
     position: absolute;
     top: -66px;

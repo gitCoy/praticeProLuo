@@ -11,7 +11,10 @@ const Header = () => {
             <div className="dropdown-content">chinese</div>
           </div>
           <div className="header-logo">
-            <img src="/img/logo.png" alt="logo" />
+            <img
+              src="https://www.monstar-lab.com.cn/wp-content/themes/monstar_lab_2021_jp_theme/public/images/revamp/logo.png"
+              alt="logo"
+            />
           </div>
         </div>
         <div className="header-right">
@@ -22,6 +25,9 @@ const Header = () => {
               </a>
             );
           })}
+        </div>
+        <div className="menu-unfold">
+          <img src="/img/menu.png" />
         </div>
       </div>
     </div>

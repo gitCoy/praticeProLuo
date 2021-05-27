@@ -5,10 +5,32 @@
   top: 0;
   z-index: 50;
   display: flex;
+  width: 100%;
   min-width: 1440px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9);
 }
+.menu-unfold {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .header-right {
 
+    a {
+      visibility: hidden;
+    }
+  }
+  .menu-unfold {
+    display: block;
+    margin-top: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
 .header-wrap {
   display: flex;
   height: 120px;
@@ -21,18 +43,20 @@
   color: #888b8d;
   font-size: 16px;
   font-family: MonumentGrotesk-Regular, MonumentGrotesk;
+
   .dropdown-content {
     position: absolute;
     display: none;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
     cursor: pointer;
   }
   &::after {
     display: inline-block;
-    border-top: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-right: 8px solid #656565;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #888b8d;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
     content: '';
   }
   &:hover .dropdown-content {
@@ -41,15 +65,21 @@
 }
 .header-logo {
   margin-top: 22px;
+
+  img {
+    max-width: 210px;
+  }
 }
 .header-right {
   display: flex;
   gap: 32px;
   margin-top: 65px;
   margin-left: 422px;
+
   .menu {
     color: #53575a;
     cursor: pointer;
+    
     &:hover {
       text-decoration: underline;
     }
